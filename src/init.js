@@ -2,6 +2,7 @@ const BobChallenge = passwordSystem => {
   const getFourDigits = (...digits) => digits.join('')
 
   const checkPasswordMatch = fourDigitPassword => passwordSystem === fourDigitPassword
+
   const burstPassword = () => {
     let fourDigitPassword = null
     for (let i = 0; i <= 9; i++) {
