@@ -25,9 +25,11 @@ const BobChallenge = passwordSystem => {
   }
 }
 
-const generateSystemPassword = () => {
-  return Array(4).fill().map(item => ~~(Math.random() * 9) + 1).join('')
-}
+const generateSystemPassword = () => (
+  Array(4).fill()
+          .map(item => ~~(Math.random() * 9) + 1)
+          .join('')
+)
 
 const password = generateSystemPassword()
 
