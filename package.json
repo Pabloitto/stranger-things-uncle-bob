@@ -1,0 +1,19 @@
+{
+  "name": "stranger-things-uncle-bob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pabloitto/stranger-things-uncle-bob.git"
+  },
+  "author": "Juan Pablo Itto <pabloitto@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pabloitto/stranger-things-uncle-bob/issues"
+  },
+  "homepage": "https://github.com/Pabloitto/stranger-things-uncle-bob#readme"
+}
