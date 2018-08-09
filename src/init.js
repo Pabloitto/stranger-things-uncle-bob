@@ -19,7 +19,28 @@ const BobChallenge = passwordSystem => {
     }
     return null
   }
-
+  /*
+  const burstPassword = () => {
+    let correctPassword = null
+    while (correctPassword === null) {
+      const currentPass = generateSystemPassword()
+      if (checkPasswordMatch(currentPass)) {
+        correctPassword = currentPass
+      }
+    }
+    return correctPassword
+  }
+  */
+  /*
+  const burstPassword = () => {
+    const currentPass = generateSystemPassword()
+    console.log('Try', currentPass)
+    if (checkPasswordMatch(currentPass)) {
+      return currentPass
+    }
+    return burstPassword()
+  }
+  */
   return {
     burstPassword
   }
@@ -35,8 +56,8 @@ const password = generateSystemPassword()
 
 const instance = BobChallenge(password)
 
-const passwordFound = instance.burstPassword()
-
 console.log('System password', password)
-
+console.time('Start')
+const passwordFound = instance.burstPassword()
+console.timeEnd('Start')
 console.log(passwordFound ? `Password found: ${passwordFound}` : 'Password not found')
