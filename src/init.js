@@ -19,28 +19,7 @@ const BobChallenge = passwordSystem => {
     }
     return null
   }
-  /*
-  const burstPassword = () => {
-    let correctPassword = null
-    while (correctPassword === null) {
-      const currentPass = generateSystemPassword()
-      if (checkPasswordMatch(currentPass)) {
-        correctPassword = currentPass
-      }
-    }
-    return correctPassword
-  }
-  */
-  /*
-  const burstPassword = () => {
-    const currentPass = generateSystemPassword()
-    console.log('Try', currentPass)
-    if (checkPasswordMatch(currentPass)) {
-      return currentPass
-    }
-    return burstPassword()
-  }
-  */
+
   return {
     burstPassword
   }
